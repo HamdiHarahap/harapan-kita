@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Campaign;
+use App\Models\Donation;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,7 +24,11 @@ class HomeController extends Controller
 
     public function detail($slug)
     {
+        $donations = Donation::orderBy('id', 'asc')->get();
         $campaign = Campaign::where('slug', $slug)->first();
-        return view('detail', compact('campaign'));
+        return view('detail', [
+            'campaign' => $campaign,
+            'donations' => $donations
+        ]);
     }
 }

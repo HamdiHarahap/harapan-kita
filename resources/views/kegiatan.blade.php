@@ -5,9 +5,9 @@
 <x-layout>
     <x-slot:title>Halaman Kegiatan</x-slot:title>
 
-    <section class="flex flex-col pt-20 items-center gap-4">
+    <section class="flex flex-col pt-28 items-center gap-5">
         <div>
-            <h1 class="font-bold text-2xl text-center mb-1">Memberikan <br> Kebahagiaan Mereka</h1>
+            <h1 class="font-bold text-2xl text-center mb-1"><span class="text-cyan-700">Memberikan</span><br> Kebahagiaan Mereka</h1>
             <div class="bg-cyan-700 w-80 h-[0.1rem]"></div>
         </div>
         <h1 class="font-bold text-xl">Kegiatan yang Berlangsung</h1>

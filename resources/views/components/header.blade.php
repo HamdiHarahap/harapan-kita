@@ -1,4 +1,4 @@
-<header class="bg-white shadow-lg fixed w-full">
+<header class="bg-white shadow-lg fixed w-full z-10">
     <nav class="flex justify-between px-44 py-4 items-center">
         <h2 class="font-bold text-2xl">HarapanKita</h2>
         <ul class="flex gap-5 font-semibold text-gray-500">

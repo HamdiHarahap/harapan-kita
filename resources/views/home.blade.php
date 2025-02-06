@@ -5,9 +5,9 @@
 <x-layout>
     <x-slot:title>Homepage</x-slot:title>
 
-    <section id="beranda" class="pt-20 px-20 flex flex-col items-center gap-12 py-12">
+    <section id="beranda" class="pt-28 px-20 flex flex-col items-center gap-12 py-12">
         <div>
-            <h1 class="font-bold text-2xl text-center mb-1">Memberikan <br> Kebahagiaan Mereka</h1>
+            <h1 class="font-bold text-2xl text-center mb-1"><span class="text-cyan-700">Memberikan</span><br> Kebahagiaan Mereka</h1>
             <div class="bg-cyan-700 w-80 h-[0.1rem]"></div>
         </div>
         <div class="grid grid-cols-3 gap-6">
@@ -42,12 +42,12 @@
                 </div>
             @endforeach
         </div>  
-        <a href="" class="text-blue-500 font-semibold text-lg hover:text-blue-800">Lihat Semua...</a>      
+        <a href="/kegiatan" class="text-blue-500 font-semibold text-lg hover:text-blue-800">Lihat Semua...</a>      
     </section>
     <section class="flex justify-between items-center py-12 px-44 gap-24">
         <img src="{{asset('/assets/images/peta.png')}}" alt="">
         <div class="flex flex-col gap-3 items-start justify-start">   
-            <h1 class="font-bold text-2xl mb-1 text-start">Kepedulian Anda <br> Begitu Berarti</h1>
+            <h1 class="font-bold text-2xl mb-1 text-start"><span class="text-cyan-700">Kepedulian Anda</span><br> Begitu Berarti</h1>
             <p>Dukungan Anda yang luar biasa telah membawa perubahan besar melalui Saya Peduli. Berkat kontribusi Anda, kami telah membangun masjid dan madrasah, menyediakan akses air bersih melalui pembuatan sumur, menyalurkan bantuan pangan bagi mereka yang membutuhkan, mensponsori pendidikan santri tahfidz, serta menyebarkan kebahagiaan Qurban kepada yang berhak. Kedermawanan Anda mencerminkan nilai-nilai iman yang mendalam, memberikan manfaat jangka panjang bagi banyak orang. Kami sangat menghargai kemitraan Anda dalam perjalanan mulia ini.</p>
         </div>
     </section>    
