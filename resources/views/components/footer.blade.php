@@ -1,5 +1,5 @@
-<footer class="flex flex-col items-center gap-16 px-44 py-12 bg-zinc-200">
-    <div class="flex justify-between w-full">
+<footer class="flex flex-col items-center gap-16 px-44 py-12 bg-zinc-200 max-[520px]:px-4">
+    <div class="flex justify-between w-full max-[520px]:flex-col max-[520px]:justify-normal gap-12">
         <h2 class="font-bold text-2xl">HarapanKita</h2>
         <div class="flex flex-col gap-4">
             <h3 class="font-bold text-lg">Links</h3>
@@ -29,7 +29,7 @@
         </div>
         <div class="flex flex-col gap-4">
             <h3 class="font-bold text-lg">Pembayaran</h3>
-            <div class="grid grid-cols-2 gap-2 items-stretch">
+            <div class="grid grid-cols-2 gap-2 items-stretch max-[520px]:w-[10rem]">
                 <img src="{{asset('/assets/images/bni.png')}}" alt="" class="w-16 bg-white p-2 rounded-md">
                 <img src="{{asset('/assets/images/qopay.png')}}" alt="" class="w-16 bg-white p-2 rounded-md">
                 <img src="{{asset('/assets/images/qris.png')}}" alt="" class="w-16 bg-white p-2 rounded-md">

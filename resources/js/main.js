@@ -80,3 +80,21 @@ buktiInput.addEventListener("change", function () {
         previewBukti.src = "";
     }
 });
+
+const btnMenu = document.querySelector(".btnMenu");
+const btnClose = document.querySelector(".btnClose");
+const menu = document.querySelector(".menu");
+
+btnMenu.addEventListener("click", () => {
+    menu.classList.remove("hidden");
+    btnClose.classList.add("flex");
+    btnClose.classList.remove("hidden");
+    btnMenu.classList.add("hidden");
+});
+
+btnClose.addEventListener("click", () => {
+    menu.classList.add("hidden");
+    btnClose.classList.remove("flex");
+    btnClose.classList.add("hidden");
+    btnMenu.classList.remove("hidden");
+});
