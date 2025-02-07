@@ -5,19 +5,19 @@
 <x-layout>
     <x-slot:title>Halaman Kegiatan</x-slot:title>
 
-    <section class="flex flex-col pt-28 items-center gap-5">
+    <section class="flex flex-col pt-28 items-center gap-5 max-[520px]:px-4">
         <div>
             <h1 class="font-bold text-2xl text-center mb-1"><span class="text-cyan-700">Memberikan</span><br> Kebahagiaan Mereka</h1>
             <div class="bg-cyan-700 w-80 h-[0.1rem]"></div>
         </div>
         <h1 class="font-bold text-xl">Kegiatan yang Berlangsung</h1>
-        <div class="grid grid-cols-3 gap-6">
+        <div class="grid grid-cols-3 gap-6 max-[520px]:grid-cols-1">
             @foreach ($campaigns as $item)
                 @php
                     $sisaHari = Carbon::now()->startOfDay()->diffInDays(Carbon::parse($item->deadline)->startOfDay(), false);
                 @endphp
         
-                <div class="flex flex-col justify-between shadow-lg rounded-md w-[20rem] h-full">
+                <div class="flex flex-col justify-between shadow-lg rounded-md w-[20rem] h-full max-[520px]:w-full">
                     <a href="/kegiatan/{{$item->slug}}" class="flex flex-col gap-4 justify-between flex-1">
                         <img src="{{ asset('/storage/'. $item->gambar) }}" alt="" class="rounded-t-md">
                         <div class="flex flex-col gap-2 px-5 flex-1">
@@ -46,6 +46,6 @@
     </section>
 </x-layout>
 
-<div class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-50 formModal">
+<div class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-50 z-20 formModal">
     <x-form :campaign="$campaign ?? null" :campaigns="$campaigns"></x-form>
 </div>

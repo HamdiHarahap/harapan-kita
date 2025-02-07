@@ -15,8 +15,8 @@ class DonationController extends Controller
         $request->validate([
             'tujuan' => 'required',
             'nama' => 'required',
-            'email' => 'email',
-            'phone' => 'numeric',
+            'email' => 'email|required',
+            'phone' => 'numeric|required',
             'bukti' => 'required|image|mimes:jpeg,png,jpg,gif|max:4048', 
             'jumlah' => 'required|numeric'
         ], [

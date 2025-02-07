@@ -1,4 +1,4 @@
-<form action="{{route('donate')}}" enctype="multipart/form-data" method="POST" class="bg-white w-[40rem] px-12 py-5 flex flex-col gap-5 rounded-md overflow-y-scroll h-[90vh] scrollbar-hide">
+<form action="{{route('donate')}}" enctype="multipart/form-data" method="POST" class="z-20 bg-white w-[40rem] max-[520px]:px-3 max-[520px]:mx-2 px-12 py-5 flex flex-col gap-5 rounded-md overflow-y-scroll h-[90vh] scrollbar-hide">
     @csrf
     <p class="font-bold text-right closeBtn cursor-pointer">X</p>
     <div class="w-full flex flex-col gap-2">
@@ -18,17 +18,17 @@
         <h2 class="font-semibold text-lg">Informasi Donatur</h2>
         <div class="flex flex-col">
             <label for="nama">Nama Lengkap</label>
-            <input type="text" name="nama" id="nama" class="px-3 py-2 rounded-md border-2 outline-none bg-transparent" placeholder="Nama Lengkap">
+            <input required type="text" name="nama" id="nama" class="px-3 py-2 rounded-md border-2 outline-none bg-transparent" placeholder="Nama Lengkap">
         </div>
         <div class="flex flex-col">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" class="px-3 py-2 rounded-md border-2 outline-none bg-transparent" placeholder="example@mail.com (opsional)">
+            <input required type="email" name="email" id="email" class="px-3 py-2 rounded-md border-2 outline-none bg-transparent" placeholder="example@mail.com">
         </div>
         <div class="flex flex-col">
             <label for="phone">Nomor Telepon</label>
             <div class="flex w-full">
                 <p class="bg-zinc-200 px-4 py-2 rounded-s-md font-bold">+62</p>
-                <input type="text" name="phone" id="phone" class="px-3 py-2 rounded-e-md border-2 outline-none bg-transparent w-full" placeholder="81234567890">
+                <input type="text" required name="phone" id="phone" class="px-3 py-2 rounded-e-md border-2 outline-none bg-transparent w-full" placeholder="81234567890">
             </div>
         </div>
         <div class="flex flex-col">
